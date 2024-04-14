@@ -46,7 +46,7 @@ RETURNS trigger AS
 				NEW.date_created IS NOT NULL and NEW.kategorie = 'CO'
 			THEN
 				NEW.delka_gis = ROUND(ST_Length(NEW.geom)::numeric, 2);
-				NEW.provedeni = ROUDN(ST_Length(NEW.geom) / 1.15) ||' sloupů';
+				NEW.provedeni = ROUND(ST_Length(NEW.geom) / 1.15) ||' sloupů';
 				NEW.modified_by = "current_user"(); 
 				NEW.date_modified = now();
 			END IF;
