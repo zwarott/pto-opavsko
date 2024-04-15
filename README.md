@@ -6,7 +6,7 @@ kolem srubů stavebního úseku Opava (OP-S).
 
 ## Členění řešeného území
 
-| Úsek          | Podúsek      | Sruby                    |
+| Úsek          | Podúsek      | Srub                     |
 | --------------|------------- | -------------------------|
 | ŽSV IV. Opava | Malé Hoštice | OP-S 06 Na Zbytkovém     |
 | ŽSV IV. Opava | Malé Hoštice | OP-S 09 Na Lukách        |
@@ -37,6 +37,54 @@ kolem srubů stavebního úseku Opava (OP-S).
 | ŽSV IV. Opava | Šibenice     | OP-S 36b Dolní Dvoják    | 
 
 ## Podklady
+
+# Archivní letecké meřické snímky
+| OP-S | Rok pořízení | Kód snímku |
+|------|--------------|------------|
+| 06   | 1946         | OPAV54     |
+| 09   | 1946         | OPAV74     |
+| 10   | 1946         | OPAV74     |
+| 11   | 1946         | OPAV73     |
+| 12   | 1946         | OPAV73     |
+| 13   | 1946         | OPAV73     |
+| 14   | 1946         | OPAV73     |
+| 15   | 1946         | OPAV73     |
+| 16   | 1946         | OPAV83     |
+| 17   | 1946         | OPAV83     |
+| 18   | 1946         | OPAV83     |
+| 19   | 1946         | OPAV93     |
+| 20   | 1946         | OPAV93     |
+| 21   | 1946         | OPAV93     |
+| 22   | 1946         | OPAV93     |
+| 23   | 1946         | HBENO2     |
+| 24   | 1946         | HBENO2     |
+| 25   | 1946         | HBENO2     |
+| 26   | 1946         | HBENO2     |
+| 27   | 1946         | HBENO2     |
+| 28   | 1946         | HBEN12     |
+| 29   | 1946         | HBEN12     |
+| 30   | 1955         | HBEN12     |
+| 31   | 1955         | HBEN12     |
+| 32   | 1955         | HBEN21     |
+| 36a  | 1955         | HBEN21     |
+| 36b  | 1955         | HBEN21     |
+
+
+- Stavební výkresy ŽSV IV. Opava z roku 1937 v měřítku 1:2500, 1:2880 (OP-S 06 až 22)
+- Stavební výkresy ŽSV IV. Opava z roku 1938 v měřítku 1:2500, 1:2880 (OP-S 24, 25, 27 až 36b)
+- Vyúčtovací plány ŽSV IV. Opava z roku 1938 v měřítku 1:2500, 1:2880 (OP-S 06 až 36b)
+- Neměcké mapové listy - Befestigungskarte Tschechoslowakei 1:75000 z roku 1936 s přítiskem z roku 1938 (15.07.1938)
+   - 3959 Troplowitz
+   - 3960 Ratibor
+   - 4059 Bruntal
+   - 4060 Hultschin
+
+- DMR 5G
+- Archivní fotodokumentace
+- Měření a fotodokumentace z terénu
+- Schémata a profily jednotlivých kategorií překážek
+- Kniha Tvrze československého opevnění 1935-1938 II.
+
 
 ## Postup prací
 ### Georeferencování
