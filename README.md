@@ -84,7 +84,7 @@ kolem srubů stavebního úseku Opava (OP-S).
 | 17   | 19.08.1937 | 1:2880    |
 | 18   | 19.08.1937 | 1:2880    |
 | 19   | 19.08.1937 | 1:2880    |
-| 2O   | 19.08.1937 | 1:2880    |
+| 20   | 19.08.1937 | 1:2880    |
 | 21   | 19.08.1937 | 1:2880    |
 | 22   | 19.08.1937 | 1:2880    |
 | 23   | -          | -         |
@@ -129,13 +129,22 @@ kolem srubů stavebního úseku Opava (OP-S).
 | 36a  | 16.06.1938? | 1:2880  | 
 | 36b  | 16.06.1938? | 1:2880  | 
 
+### Československé mapové listy v měřítku 1:75000
+| Kód  | Název            | Vydáno  |
+|------|------------------|---------|
+| 3959 | Krnov            | 06.1938 | 
+| 3960 | Sudice           | 05.1938 |
+| 4059 | Bruntál          | 05.1938 |
+| 4060 | Moravská Ostrava | 09.1938 |
 
+### Neměcké mapové listy - Befestigungskarte Tschechoslowakei v měřítku 1:75000 
+| Kód  | Název      | Vydáno   | Přítisk     |
+|------|------------|----------|-------------|
+| 3959 | Troplowitz | 08.1938? | 15.07.1938  |
+| 3960 | Ratibor    | 02.1938? | 15.07.1938  |
+| 4059 | Bruntál    | 02.1938? | 15.07.1938  |
+| 4060 | Hultschin  | 02.1938? | 15.07.1938  |
 
-- Neměcké mapové listy - Befestigungskarte Tschechoslowakei 1:75000 z roku 1936 s přítiskem z roku 1938 (15.07.1938)
-   - 3959 Troplowitz
-   - 3960 Ratibor
-   - 4059 Bruntal
-   - 4060 Hultschin
 
 - DMR 5G
 - Archivní fotodokumentace
@@ -148,6 +157,8 @@ kolem srubů stavebního úseku Opava (OP-S).
 ### Georeferencování
 ### Analýza dobových fotografií
 ### Vektorizace
+### Zálohování databáze
+
 
 
 ## Výstupy
