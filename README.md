@@ -5,7 +5,6 @@ v úseku ŽSV (Ženijní skupinové velitelství) IV. Opava, a to konkrétně
 kolem srubů stavebního úseku Opava (OP-S).
 
 ## Členění řešeného území
-
 | Úsek          | Podúsek      | Srub                     |
 | --------------|------------- | -------------------------|
 | ŽSV IV. Opava | Malé Hoštice | OP-S 06 Na Zbytkovém     |
@@ -37,7 +36,6 @@ kolem srubů stavebního úseku Opava (OP-S).
 | ŽSV IV. Opava | Šibenice     | OP-S 36b Dolní Dvoják    | 
 
 ## Podklady
-
 ### Archivní letecké meřické snímky
 | OP-S | Rok pořízení | Kód snímku |
 |------|--------------|------------|
@@ -146,6 +144,12 @@ kolem srubů stavebního úseku Opava (OP-S).
 | 4060 | Hultschin  | 02.1938? | 15.07.1938  |
 
 
+z roku 1936 s přítiskem z roku 1938 (15.07.1938)
+   - 3959 Troplowitz
+   - 3960 Ratibor
+   - 4059 Bruntal
+   - 4060 Hultschin
+
 - DMR 5G
 - Archivní fotodokumentace
 - Měření a fotodokumentace z terénu
@@ -158,6 +162,78 @@ kolem srubů stavebního úseku Opava (OP-S).
 ### Analýza dobových fotografií
 ### Vektorizace
 ### Zálohování databáze
+
+## Databáze
+### Struktura databáze
+```
+pto_opavsko
+├── audit
+│   ├── centroidy_atlas_history
+│   ├── csr_pred_zaborem_history
+│   ├── geodeticke_zamereni_history
+│   ├── mrizka_m2000_history
+│   ├── palebne_zvony_history
+│   ├── pomocne_linie_history
+│   ├── pozice_srubu_main_history
+│   ├── pozice_srubu_overview_history
+│   ├── pozorovatel_pohled_history
+│   ├── pozorovatel_pozice_history
+│   ├── prekazky_buffer_50m_history
+│   ├── prekazky_linie_history
+│   ├── prubeh_prekazek_history
+│   └── sruby_ruian_history
+├── detail
+│   ├── geodeticke_zamereni
+│   ├── schema_body
+│   ├── schema_koty
+│   ├── schema_linie
+│   └── schema_useky
+├── lookups
+│   ├── kat_vp_lookup
+│   ├── katastr_lookup
+│   ├── kategorie_lookup
+│   ├── ops_lookup
+│   ├── podusek_lookup
+│   ├── srub_nazev_lookup
+│   ├── srub_typ_lookup
+│   ├── stav_lookup
+│   └── usek_lookup
+├── main
+│   ├── centroidy_atlas
+│   ├── delici_linie_gen
+│   ├── hranice_cr
+│   ├── mrizka_m2000
+│   ├── palebne_zvony
+│   ├── pomocne_linie
+│   ├── pozice_srubu_main
+│   ├── pozorovatel_pohled
+│   ├── pozorovatel_pozice
+│   ├── prekazky_agregovane
+│   ├── prekazky_buffer_50m
+│   ├── prekazky_gen
+│   ├── prekazky_linie
+│   ├── prekazky_test
+│   ├── qgis_projects
+│   └── sruby_ruian
+├── overview_13kk
+│   ├── csr_pred_zaborem
+│   └── csr_pred_zaborem_label
+├── overview_75k
+│   ├── buffered_400m
+│   ├── ipenky
+│   ├── pozice_srubu_overview
+│   └── prubeh_prekazek
+└── public
+    ├── geography_columns
+    ├── geometry_columns
+    ├── layer_styles
+    └── spatial_ref_sys
+```
+
+### Export stylů do databazáze
+V prostředí QGIS lze vyexportovat styly níže uvedeným postupem:
+`Layer Properties` > `Export` > `Save as QGIS Layer Style File`
+![Save Layer Style](./docs_images/qgis_save_layer_style.png)
 
 
 
