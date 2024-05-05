@@ -70,62 +70,62 @@ kolem srubů stavebního úseku Opava (OP-S).
 ### Stavební výkresy ŽSV IV. Opava
 | OP-S | Pořízeno   | Měřítko   |
 |------|------------|-----------|
-| 06   | 19.08.1937 | 1:2880    | 
-| 09   | 19.08.1937 | 1:2500    |
-| 10   | 19.08.1937 | 1:2500    |
-| 11   | 19.08.1937 | 1:2500    | 
-| 12   | 19.08.1937 | 1:2500    |
-| 13   | 19.08.1937 | 1:2880    |
-| 14   | 19.08.1937 | 1:2880    |
-| 15   | 19.08.1937 | 1:2880    |
-| 16   | 19.08.1937 | 1:2880    |
-| 17   | 19.08.1937 | 1:2880    |
-| 18   | 19.08.1937 | 1:2880    |
-| 19   | 19.08.1937 | 1:2880    |
-| 20   | 19.08.1937 | 1:2880    |
-| 21   | 19.08.1937 | 1:2880    |
-| 22   | 19.08.1937 | 1:2880    |
+| 06   | 19.08.1937 | 1 : 2 880 | 
+| 09   | 19.08.1937 | 1 : 2 500 |
+| 10   | 19.08.1937 | 1 : 2 500 |
+| 11   | 19.08.1937 | 1 : 2 500 | 
+| 12   | 19.08.1937 | 1 : 2 500 |
+| 13   | 19.08.1937 | 1 : 2 880 |
+| 14   | 19.08.1937 | 1 : 2 880 |
+| 15   | 19.08.1937 | 1 : 2 880 |
+| 16   | 19.08.1937 | 1 : 2 880 |
+| 17   | 19.08.1937 | 1 : 2 880 |
+| 18   | 19.08.1937 | 1 : 2 880 |
+| 19   | 19.08.1937 | 1 : 2 880 |
+| 20   | 19.08.1937 | 1 : 2 880 |
+| 21   | 19.08.1937 | 1 : 2 880 |
+| 22   | 19.08.1937 | 1 : 2 880 |
 | 23   | -          | -         |
-| 24   | 23.08.1937 | 1:2500    |
-| 25   | 23.08.1937 | 1:2500    |
+| 24   | 23.08.1937 | 1 : 2 500 |
+| 25   | 23.08.1937 | 1 : 2 500 |
 | 26   | -          | -         |
-| 27   | 23.08.1937 | 1:2500    |
-| 28   | 23.08.1937 | 1:2500    |
-| 29   | 23.08.1937 | 1:2500    |
-| 30   | 23.08.1937 | 1:2500    |
+| 27   | 23.08.1937 | 1 : 2 500 |
+| 28   | 23.08.1937 | 1 : 2 500 |
+| 29   | 23.08.1937 | 1 : 2 500 |
+| 30   | 23.08.1937 | 1 : 2 500 |
 | 31   | neuvedeno  | neuvedeno |
 | 31   | neuvedeno  | neuvedeno |
 
 ### Vyúčtovací plány ŽSV IV. Opava 
-| OP-S | Pořízeno    | Měřítko |
-|------|-------------|---------|
-| 06   | 16.06.1938? | 1:2880  | 
-| 09   | 16.06.1938? | 1:2500  | 
-| 10   | 16.06.1938? | 1:2500  | 
-| 11   | 16.06.1938? | 1:2500  | 
-| 12   | 16.06.1938? | 1:2500  | 
-| 13   | 16.06.1938? | 1:2880  | 
-| 14   | 16.06.1938? | 1:2880  | 
-| 15   | 16.06.1938? | 1:2880  | 
-| 16   | 16.06.1938? | 1:2880  | 
-| 17   | 16.06.1938? | 1:2880  | 
-| 18   | 16.06.1938? | 1:2880  | 
-| 19   | 16.06.1938? | 1:2880  | 
-| 20   | 16.06.1938? | 1:2880  | 
-| 21   | 16.06.1938? | 1:2880  | 
-| 22   | 16.06.1938? | 1:2880  | 
-| 23   | 16.06.1938? | 1:2880  | 
-| 24   | 16.06.1938? | 1:2500  | 
-| 25   | 16.06.1938? | 1:2500  | 
-| 26   | 16.06.1938? | 1:2500  | 
-| 27   | 16.06.1938? | 1:2500  | 
-| 28   | 16.06.1938? | 1:2500  | 
-| 29   | 16.06.1938? | 1:2880  | 
-| 30   | 16.06.1938? | 1:2880  | 
-| 31   | 16.06.1938? | 1:2880  | 
-| 32   | 16.06.1938? | 1:2880  | 
-| 36a  | 16.06.1938? | 1:2880  | 
-| 36b  | 16.06.1938? | 1:2880  | 
+| OP-S | Pořízeno    | Měřítko   |
+|------|-------------|-----------|
+| 06   | 16.06.1938? | 1 : 2 880 | 
+| 09   | 16.06.1938? | 1 : 2 500 | 
+| 10   | 16.06.1938? | 1 : 2 500 | 
+| 11   | 16.06.1938? | 1 : 2 500 | 
+| 12   | 16.06.1938? | 1 : 2 500 | 
+| 13   | 16.06.1938? | 1 : 2 880 | 
+| 14   | 16.06.1938? | 1 : 2 880 | 
+| 15   | 16.06.1938? | 1 : 2 880 | 
+| 16   | 16.06.1938? | 1 : 2 880 | 
+| 17   | 16.06.1938? | 1 : 2 880 | 
+| 18   | 16.06.1938? | 1 : 2 880 | 
+| 19   | 16.06.1938? | 1 : 2 880 | 
+| 20   | 16.06.1938? | 1 : 2 880 | 
+| 21   | 16.06.1938? | 1 : 2 880 | 
+| 22   | 16.06.1938? | 1 : 2 880 | 
+| 23   | 16.06.1938? | 1 : 2 880 | 
+| 24   | 16.06.1938? | 1 : 2 500 | 
+| 25   | 16.06.1938? | 1 : 2 500 | 
+| 26   | 16.06.1938? | 1 : 2 500 | 
+| 27   | 16.06.1938? | 1 : 2 500 | 
+| 28   | 16.06.1938? | 1 : 2 500 | 
+| 29   | 16.06.1938? | 1 : 2 880 | 
+| 30   | 16.06.1938? | 1 : 2 880 | 
+| 31   | 16.06.1938? | 1 : 2 880 | 
+| 32   | 16.06.1938? | 1 : 2 880 | 
+| 36a  | 16.06.1938? | 1 : 2 880 | 
+| 36b  | 16.06.1938? | 1 : 2 880 | 
 
 ### Československé mapové listy v měřítku 1:75000
 | Kód  | Název            | Vydáno  |
@@ -144,12 +144,6 @@ kolem srubů stavebního úseku Opava (OP-S).
 | 4060 | Hultschin  | 02.1938? | 15.07.1938  |
 
 
-z roku 1936 s přítiskem z roku 1938 (15.07.1938)
-   - 3959 Troplowitz
-   - 3960 Ratibor
-   - 4059 Bruntal
-   - 4060 Hultschin
-
 - DMR 5G
 - Archivní fotodokumentace
 - Měření a fotodokumentace z terénu
@@ -162,6 +156,16 @@ z roku 1936 s přítiskem z roku 1938 (15.07.1938)
 ### Analýza dobových fotografií
 ### Vektorizace
 ### Zálohování databáze
+Databáze je zálohována a následně šifrována za pomocí [**GNU Privacy Guard**](https://www.gnupg.org/software/index.html).
+
+Po spuštění skriptu v terminálu `python ./database/backup/run_backup_encrypt.py` je uživatel vyzván k zadání hesla pro účely šifrování.
+Následně potvrdí nově zvolené heslo. Pokud je databáze zabezpečena heslem, tak je nutné zadat i toto heslo. 
+
+Šifrovanou databázi lze dešifrována příkazem v terminálu `gpg --output output_file.sql --decrypt input_file.sql.gpg`, kde `output_file.sql`
+reprezentuje dešifrovanou databázi, zatímco `input_file.sql.gpg` představuje vstupní, zašifrovanou databázi.
+
+<img src="./docs_images/encrypt_database.png" alt="Encrypt database in terminal" style="width:400px;height:100px;"/>
+
 
 ## Databáze
 ### Struktura databáze
@@ -182,12 +186,14 @@ pto_opavsko
 │   ├── prekazky_linie_history
 │   ├── prubeh_prekazek_history
 │   └── sruby_ruian_history
+│
 ├── detail
 │   ├── geodeticke_zamereni
 │   ├── schema_body
 │   ├── schema_koty
 │   ├── schema_linie
 │   └── schema_useky
+│
 ├── lookups
 │   ├── kat_vp_lookup
 │   ├── katastr_lookup
@@ -198,6 +204,7 @@ pto_opavsko
 │   ├── srub_typ_lookup
 │   ├── stav_lookup
 │   └── usek_lookup
+│
 ├── main
 │   ├── centroidy_atlas
 │   ├── delici_linie_gen
@@ -215,14 +222,17 @@ pto_opavsko
 │   ├── prekazky_test
 │   ├── qgis_projects
 │   └── sruby_ruian
+│
 ├── overview_13kk
 │   ├── csr_pred_zaborem
 │   └── csr_pred_zaborem_label
+│
 ├── overview_75k
 │   ├── buffered_400m
 │   ├── ipenky
 │   ├── pozice_srubu_overview
 │   └── prubeh_prekazek
+│
 └── public
     ├── geography_columns
     ├── geometry_columns
@@ -230,10 +240,31 @@ pto_opavsko
     └── spatial_ref_sys
 ```
 
+**Schéma** `audit` 
+Audit schéma obsahuje tabulky, které zaznamenávají změny při editace (geometrie + další informativní údaje).
+
+Příklad: 
+Tabulka `audit.centroidy_atlas_history` trasuje změny v hlavní tabulce `main.centroidy_atlas`.
+
+**Schéma** `detail` 
+
+**Schéma** `lookups` 
+
+**Schéma** `main` 
+
+**Schéma** `overview_13kk` 
+
+**Schéma** `overview_75k` 
+
+**Schéma** `public` 
+
+
 ### Export stylů do databazáze
 V prostředí QGIS lze vyexportovat styly níže uvedeným postupem:
-`Layer Properties` > `Export` > `Save as QGIS Layer Style File`
-![Save Layer Style](./docs_images/qgis_save_layer_style.png)
+`Layer Properties` > `Export` > `Save as QGIS Layer Style File`.
+Po vyexportování bude styl propojen s odpovídající vrstvou (tabulkou v databázi).
+
+<img src="./docs_images/qgis_save_layer_style.png" alt="Save Layer Style" style="width:300px;height:400px;"/>
 
 
 
