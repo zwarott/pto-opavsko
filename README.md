@@ -155,19 +155,12 @@ kolem srubů stavebního úseku Opava (OP-S).
 ### Georeferencování
 ### Analýza dobových fotografií
 ### Vektorizace
-### Zálohování databáze
-Databáze je zálohována a následně šifrována za pomocí [**GNU Privacy Guard**](https://www.gnupg.org/software/index.html).
-
-Po spuštění skriptu v terminálu `python ./database/backup/run_backup_encrypt.py` je uživatel vyzván k zadání hesla pro účely šifrování.
-Následně potvrdí nově zvolené heslo. Pokud je databáze zabezpečena heslem, tak je nutné zadat i toto heslo. 
-
-Šifrovanou databázi lze dešifrována příkazem v terminálu `gpg --output output_file.sql --decrypt input_file.sql.gpg`, kde `output_file.sql`
-reprezentuje dešifrovanou databázi, zatímco `input_file.sql.gpg` představuje vstupní, zašifrovanou databázi.
-
-<img src="./docs_images/encrypt_database.png" alt="Encrypt database in terminal" style="width:400px;height:100px;"/>
 
 
 ## Databáze
+### Konfigurace databáze
+:warning: Rozepsat + uvést rozšíření o extenzi PostGIS.
+
 ### Struktura databáze
 ```
 pto_opavsko
@@ -186,14 +179,12 @@ pto_opavsko
 │   ├── prekazky_linie_history
 │   ├── prubeh_prekazek_history
 │   └── sruby_ruian_history
-│
 ├── detail
 │   ├── geodeticke_zamereni
 │   ├── schema_body
 │   ├── schema_koty
 │   ├── schema_linie
 │   └── schema_useky
-│
 ├── lookups
 │   ├── kat_vp_lookup
 │   ├── katastr_lookup
@@ -204,7 +195,6 @@ pto_opavsko
 │   ├── srub_typ_lookup
 │   ├── stav_lookup
 │   └── usek_lookup
-│
 ├── main
 │   ├── centroidy_atlas
 │   ├── delici_linie_gen
@@ -220,44 +210,115 @@ pto_opavsko
 │   ├── prekazky_gen
 │   ├── prekazky_linie
 │   ├── prekazky_test
-│   ├── qgis_projects
 │   └── sruby_ruian
-│
 ├── overview_13kk
 │   ├── csr_pred_zaborem
 │   └── csr_pred_zaborem_label
-│
 ├── overview_75k
 │   ├── buffered_400m
 │   ├── ipenky
 │   ├── pozice_srubu_overview
 │   └── prubeh_prekazek
-│
 └── public
     ├── geography_columns
     ├── geometry_columns
     ├── layer_styles
+    ├── qgis_projects
     └── spatial_ref_sys
 ```
 
-**Schéma** `audit` 
-Audit schéma obsahuje tabulky, které zaznamenávají změny při editace (geometrie + další informativní údaje).
+#### Schéma `audit` 
+Schéma obsahuje tabulky, které zaznamenávají změny při editace (geometrie + další informativní údaje).
+Účelem tabulek s příponou `_history` je trasování změn ve vrstvách obsahující zejména prostorovou informaci. 
+V případě potřeby lze obnovit původní geometrii vrstvy uloženou v určitém řádku.
 
-Příklad: 
-Tabulka `audit.centroidy_atlas_history` trasuje změny v hlavní tabulce `main.centroidy_atlas`.
+##### Příklad auditu vybraného prvku 
+`audit.prekazky_linie_history` trasuje změny v hlavní tabulce `main.prekazky_linie`. Informace ohledně editace
+jsou uloženy ve sloupci `valid_range`, ve kterém se zaznamenává proces vytvoření, aktualizace a odstranění prvku
+vrstvy (tabulky). Jednotlivým změnám v tabulce je přiřazen unikátní identifikátor (`hid`). Ty jsou v tabulce
+zaznamenávány chronologicky.
 
-**Schéma** `detail` 
+Na níže uvedené ukázce je demonstrován proces změny vybraného prvku v tabulce s (`fid = 47`). Tento prvek byl 
+vytvořen `2023-01-03 21:24:41` a naposledy změněn v `2024-03-25 22:07:39`.
 
-**Schéma** `lookups` 
+První časový záznam v hranaté závorce představuje čas, kdy byl prvek buď vytvořen (`hid = 160`) nebo aktualizován
+`hid IN (379, 487, 705)`. Druhý časový záznam v hranaté závorce představuje čas, kdy byl prvek buď odstraněn nebo
+aktualizován `hid IN (379, 487, 705)`. V případě aktualizace je nejdříve u vytvořeného prvku vyplněn druhý časový
+záznam. Následně je vygenerován nový řádek, kde je vložen duplikát druhého časového záznamu předchozího řádku.
+Aktualizace prvku se tedy chová jako kdyby byl prvek odstraněn a ihned znovu vytvořen.
 
-**Schéma** `main` 
+<img src="./docs_images/prekazky_linie_history.png" alt="Audit vrstvy" style="width:800px;height:100px;"/>
 
-**Schéma** `overview_13kk` 
 
-**Schéma** `overview_75k` 
+##### :point_right: Příklad filtrování prvků dle časových záznamů
+Pro účely auditu editace prvků v tabulce (momentálně jen `main.prekazky_linie`) jsou vytvořeny SQL s vstupními
+proměnými. Tyto skripty jsou nastaveny tak, aby je bylo možné spustit v interaktivním porstředí `psql`.
 
-**Schéma** `public` 
+Audit vybraného prvku lze spustit příkazem:
+`psql \set _fid 47 \i ./database/audit/from_to_prekazky_linie.sql'`
 
+Audit vybraných prvků v určitém časovém rozpětí lze spustit příkazem:
+`psql \set _from 'YYYY-MM-DD' \set _to 'YYYY-MM-DD \i ./database/audit/from_to_prekazky_linie.sql'`
+
+Audit vybraných prvků od určitého časového záznamu lze spustit příkazem: 
+`psql \set _from 'YYYY-MM-DD' \i ./database/audit/over_prekazky_linie.sql'`
+
+Audit vybraných prvků do určitého časového záznamu lze spustit příkazem: 
+`psql \set _to 'YYYY-MM-DD' \i ./database/audit/under_prekazky_linie.sql'`
+
+> :warning: Bude vytvořen Python script pro audit vybrané tabulky ve schématu `audit`.
+
+#### Schéma `detail` 
+Schéma obsahuje vrstvy v podrobném měřítku (zpravidla 1 : 1 000 a větším). Jedná se zejména o geodetické
+zaměření a detailní provedení liniových překážek opevnění.
+
+
+#### Schéma `lookups` 
+Schéma obsahuje tabulky bez prostorové informace. Jedná se o tzv. tabulky s cizími klíčy, neboli tabulky s vybraným
+atributem (sloupcem), pro který jsou přednastaveny povolené vstupní hodnoty. Po propojení s cílovou tabulkou (vrstvou)
+je zabezpečeno, že do vybraného atributu nebude vložena hodnota nebo údaj, který není nadefinován v propojené tabulce
+v rámci schématu `lookup`.
+
+> :bulb: Využití cizích klíčů nabízí možnost propojit nastavení PostgreSQL omezení s QGIS Forms. Při editaci vrstvy v
+> prostředí QGIS uživatel vybírá hodnotu/údaj z přednastaveného seznamu. Tím je zaručena eliminace chyb při ručním vyplňování 
+> v atributové tabulce.
+
+##### :point_right: Příklad propojení tabulek za použití cizích klíčů
+Atribut `podusek` v tabulce `overview_75k.pozice_srubu_overview` může obsahovat pouze údaje, které jsou obsažené ve
+sloupci `podusek` v tabulce `lookups.podusek_lookup`.
+<img src="./docs_images/podusek_pop_up_menu.png.png" alt="QGIS pop-up menu" style="width:800px;height:100px;"/>
+
+
+#### Schéma `main` 
+Schéma obsahuje vrstvy (tabulky) zobrazitelné ve standardním měřítku (zpravidla k 1 : 2 000).
+
+
+#### Schéma `overview_13kk` 
+Schéma obsahuje vrstvy (tabulky) zobrazitelné zpravidla v měřítku 1 : 13 000 000.
+
+
+#### Schéma `overview_75k` 
+Schéma obsahuje vrstvy (tabulky) zobrazitelné zpravidla v měřítku 1 : 75 000.
+
+
+#### Schéma `public` 
+Jedná so o výchozí schéma, které v rámci daného projektu obsahuje zejména konfigurační nastavení databáze, QGIS projektu
+a výchozí stylování tabulek (vrstev). Pro účely práce s prostorovými daty (PostGIS) jsou součástí výchozího schématu metadatové tabulky
+pro integraci lokálních a globálních kordinačních referenčních systémů (`geoography_column`, `geometry_column`, `spatial_ref_sys`).
+Jelikož je projekt primárně zpracováván v prostředí QGIS, tak je do databáze ukládáno výchozí stylování vektorových vrstev (`layer_styles`)
+včetně projektového souboru v rámci (`qgis_projects`), který v sobě skrývá cesty importovaných vektorových vrstev z PostgreSQL databáze, 
+doprovodných rastrových snímků či WMS služeb. Pro účely exportu jsou v projektovém souboru uloženy výkresové sestavy
+
+### Zálohování databáze
+Databáze je zálohována a následně šifrována za pomocí [**GNU Privacy Guard**](https://www.gnupg.org/software/index.html).
+
+Po spuštění skriptu v terminálu `python ./database/backup/run_backup_encrypt.py` je uživatel vyzván k zadání hesla pro účely šifrování.
+Následně potvrdí nově zvolené heslo. Pokud je databáze zabezpečena heslem, tak je nutné zadat i toto heslo. 
+
+Šifrovanou databázi lze dešifrovat příkazem v terminálu `gpg --output output_file.sql --decrypt input_file.sql.gpg`, kde `output_file.sql`
+reprezentuje dešifrovanou databázi, zatímco `input_file.sql.gpg` představuje vstupní, zašifrovanou databázi.
+
+<img src="./docs_images/encrypt_database.png" alt="Encrypt database in terminal" style="width:500px;height:100px;"/>
 
 ### Export stylů do databazáze
 V prostředí QGIS lze vyexportovat styly níže uvedeným postupem:
@@ -269,5 +330,7 @@ Po vyexportování bude styl propojen s odpovídající vrstvou (tabulkou v data
 
 
 ## Výstupy
-### Atlas I. Generalizovaný průběh
-### Atlas II. Detailní průběh
+### Sledovaný úsek - obecný přehled (1 : 60 000)
+### Sledovaný úsek - podúseky (1 : 60 000)
+### Atlas I. Generalizovaný průběh překážek (1 : 2 000)
+### Atlas II. Detailní průběh překážek (1 : 1 000)
