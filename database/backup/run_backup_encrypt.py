@@ -41,5 +41,5 @@ def create_backup():
 # Create latest backup and encrypt it
 create_backup()
 
-# Encrypt file within termin running command below:
+# Encrypt file within terminal running command below:
 # gpg --output output_file.sql --decrypt input_file.sql.gpg  
