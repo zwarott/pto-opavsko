@@ -1,8 +1,7 @@
 # Překážky těžkého opevnění na Opavsku
-
 Projekt se zaměřuje na vektorizaci průběhu překážek těžkého opevnění
-v úseku ŽSV (Ženijní skupinové velitelství) IV. Opava, a to konkrétně 
-kolem srubů stavebního úseku Opava (OP-S).
+v rámci úseku ŽSV (Ženijní skupinové velitelství) IV. Opava, a to konkrétně 
+kolem srubů stavebního úseku Opava (OP-S) v rozmezí OP-S 06 až 36b.
 
 ## Členění řešeného území
 | Úsek          | Podúsek      | Srub                     |
@@ -127,7 +126,7 @@ kolem srubů stavebního úseku Opava (OP-S).
 | 36a  | 16.06.1938? | 1 : 2 880 | 
 | 36b  | 16.06.1938? | 1 : 2 880 | 
 
-### Československé mapové listy v měřítku 1:75000
+### Československé mapové listy v měřítku 1 : 75 000
 | Kód  | Název            | Vydáno  |
 |------|------------------|---------|
 | 3959 | Krnov            | 06.1938 | 
@@ -135,7 +134,7 @@ kolem srubů stavebního úseku Opava (OP-S).
 | 4059 | Bruntál          | 05.1938 |
 | 4060 | Moravská Ostrava | 09.1938 |
 
-### Neměcké mapové listy - Befestigungskarte Tschechoslowakei v měřítku 1:75000 
+### Neměcké mapové listy - Befestigungskarte Tschechoslowakei v měřítku 1 : 75 000 
 | Kód  | Název      | Vydáno   | Přítisk     |
 |------|------------|----------|-------------|
 | 3959 | Troplowitz | 08.1938? | 15.07.1938  |
@@ -143,12 +142,22 @@ kolem srubů stavebního úseku Opava (OP-S).
 | 4059 | Bruntál    | 02.1938? | 15.07.1938  |
 | 4060 | Hultschin  | 02.1938? | 15.07.1938  |
 
+### Archivní fotodokumentace
+Pro účely oveření provedení jednotlivých částí liniových překážek a pro indentifikaci
+lokálních anomálií byly použity dobové fotografie, a to jednak volně dostupné, tak i v 
+soukromém vlastnictví spoluautora. 
 
-- DMR 5G
-- Archivní fotodokumentace
-- Měření a fotodokumentace z terénu
-- Schémata a profily jednotlivých kategorií překážek
-- Kniha Tvrze československého opevnění 1935-1938 II.
+> [!NOTE]
+> Pro jednotlivé OP-S uvést dostupnost dobových fotografií.
+
+### Měření a fotodokumentace z terénu
+Nedílnou součástí identifikace průběhu překážek těžkého opevnění je i průzkům a měření
+v terénu. Vybrané úseky bylo z důvodu husté vegetace a špatně přístupného terénu obnažit 
+a následně až provést měření a lokalizaci zachovaných zbytků překážek za pomocí GPS.
+
+
+### Schémata a profily jednotlivých kategorií překážek
+### Kniha Tvrze československého opevnění 1935-1938 II.
 
 
 ## Postup prací
@@ -159,7 +168,9 @@ kolem srubů stavebního úseku Opava (OP-S).
 
 ## Databáze
 ### Konfigurace databáze
-:warning: Rozepsat + uvést rozšíření o extenzi PostGIS.
+
+> [!NOTE] 
+> Rozepsat + uvést rozšíření o extenzi PostGIS.
 
 ### Struktura databáze
 ```
@@ -232,7 +243,7 @@ Schéma obsahuje tabulky, které zaznamenávají změny při editace (geometrie 
 Účelem tabulek s příponou `_history` je trasování změn ve vrstvách obsahující zejména prostorovou informaci. 
 V případě potřeby lze obnovit původní geometrii vrstvy uloženou v určitém řádku.
 
-##### Příklad auditu vybraného prvku 
+##### :point_right: Příklad auditu vybraného prvku 
 `audit.prekazky_linie_history` trasuje změny v hlavní tabulce `main.prekazky_linie`. Informace ohledně editace
 jsou uloženy ve sloupci `valid_range`, ve kterém se zaznamenává proces vytvoření, aktualizace a odstranění prvku
 vrstvy (tabulky). Jednotlivým změnám v tabulce je přiřazen unikátní identifikátor (`hid`). Ty jsou v tabulce
@@ -247,7 +258,7 @@ aktualizován `hid IN (379, 487, 705)`. V případě aktualizace je nejdříve u
 záznam. Následně je vygenerován nový řádek, kde je vložen duplikát druhého časového záznamu předchozího řádku.
 Aktualizace prvku se tedy chová jako kdyby byl prvek odstraněn a ihned znovu vytvořen.
 
-<img src="./docs_images/prekazky_linie_history.png" alt="Audit vrstvy" style="width:800px;height:100px;"/>
+<img src="./docs_images/prekazky_linie_history.png" alt="Audit vrstvy" style="width:800px;height:50px;"/>
 
 
 ##### :point_right: Příklad filtrování prvků dle časových záznamů
@@ -279,14 +290,15 @@ atributem (sloupcem), pro který jsou přednastaveny povolené vstupní hodnoty.
 je zabezpečeno, že do vybraného atributu nebude vložena hodnota nebo údaj, který není nadefinován v propojené tabulce
 v rámci schématu `lookup`.
 
-> :bulb: Využití cizích klíčů nabízí možnost propojit nastavení PostgreSQL omezení s QGIS Forms. Při editaci vrstvy v
+> [!TIP]
+> Využití cizích klíčů nabízí možnost propojit nastavení PostgreSQL omezení s QGIS Forms. Při editaci vrstvy v
 > prostředí QGIS uživatel vybírá hodnotu/údaj z přednastaveného seznamu. Tím je zaručena eliminace chyb při ručním vyplňování 
 > v atributové tabulce.
 
 ##### :point_right: Příklad propojení tabulek za použití cizích klíčů
 Atribut `podusek` v tabulce `overview_75k.pozice_srubu_overview` může obsahovat pouze údaje, které jsou obsažené ve
 sloupci `podusek` v tabulce `lookups.podusek_lookup`.
-<img src="./docs_images/podusek_pop_up_menu.png.png" alt="QGIS pop-up menu" style="width:800px;height:100px;"/>
+<img src="./docs_images/podusek_pop_up_menu.png" alt="QGIS pop-up menu" style="width:800px;height:100px;"/>
 
 
 #### Schéma `main` 
@@ -328,9 +340,43 @@ Po vyexportování bude styl propojen s odpovídající vrstvou (tabulkou v data
 <img src="./docs_images/qgis_save_layer_style.png" alt="Save Layer Style" style="width:300px;height:400px;"/>
 
 
-
 ## Výstupy
 ### Sledovaný úsek - obecný přehled (1 : 60 000)
+Mapový výstup vyobrazuje délku řešeného úseku v měřítku 1 : 60 000, který je doplněn o rozmístění překážek přes
+komunikaci a vybrané archivní fotografie.
+
+Výstup je dostupný ve formátu PNG [**obecný přehled**](https://github.com/zwarott/pto-opavsko/blob/main/outputs/overviews_60000/overview_general_cz.png) 
+
 ### Sledovaný úsek - podúseky (1 : 60 000)
+Mapový výstup vyobrazuje délku řešeného úseku v měřítku 1 : 60 000 se zaměřením na rozdělení na jednotlivé podúseky, které jsou
+barevně odlišeny a doplněny o náhledy liniových překážek kolem pěchotních srubů.
+
+Výstup je dostupný ve formátu PNG [**podúseky**](https://github.com/zwarott/pto-opavsko/blob/main/outputs/overviews_60000/overview_subsections_s.png) 
+
 ### Atlas I. Generalizovaný průběh překážek (1 : 2 000)
+Exportované snímky průběhu liniových překážek představují generalizovaný průběh vzhledem k měřítku 1 : 2 000.
+Generalizace spočívá jednak ve zjednodušení geometrie liniových prvků, tak i v agregaci jednotlivých kategorií.
+
+Výstupy jsou dostupné ve formátu PNG v adresáři [**generalized_2000**](https://github.com/zwarott/pto-opavsko/tree/main/outputs/generalized_2000) 
+
+#### Kategorizace překážek
+| Typ                 | Kategorie        | Stav        | OP-S                                                                        |
+|---------------------|------------------|-------------|-----------------------------------------------------------------------------|
+| intervalová         | těžká            | dokončena   | 06, 09, 10, 15, 16, 17, 18, 19, 21, 22, 24, 25, 26, 27, 28, 29, 30          |
+| intervalová         | těžká            | nedokončena | 11, 12, 13, 14, 15, 20, 22, 23, 24                                          |
+| intervalová         | přírodní         | přírodní    | 22                                                                          |
+| intervalová         | přírodní (vodní) | přírodní    | 06, 09, 20                                                                  |
+| protitankový příkop | stěna            | dokončena   | 06, 11, 12, 13, 14, 15, 16, 17, 18, 19, 22, 23, 24, 30, 31, 32, 36a         |
+| protitankový příkop | stěna            | nedokončena | 21, 25, 26, 27, 28, 29, 31, 32, 36a                                         |
+| protitankový příkop | lehká            | dokončena   | 06, 09, 10, 11, 12, 13, 15, 16, 17, 18, 19, 22, 23, 24, 25, 30, 31, 32, 36a | 
+| protitankový příkop | lehká            | nedokončena | 14                                                                          |
+| protitankový příkop | lehká            | provizorní  | 26, 27, 28, 29, 31, 32, 36a                                                 |
+| protitankový příkop | přírodní         | přírodní    | 22                                                                          |
+| obvodová            | čelní těžká      | dokončena   | 06, 09, 10, 15, 16, 17, 18, 19, 25, 26, 27, 28, 29, 30, 31, 32, 36a, 36b    |
+| obvodová            | čelní těžká      | nedokončena | 11, 12, 13, 14, 20, 22, 23, 24                                              |
+| obvodová            | čelní těžká      | provizorní  | 21                                                                          |
+| obvodová            | týlová lehká     | dokončena   | 06, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 21, 22, 23, 24, 25          |
+| obvodová            | týlová lehká     | nedokončena | 20                                                                          |
+| obvodová            | týlová lehká     | provizorní  | 26, 27, 28, 29, 30, 31, 32, 36a, 36b                                        |
+
 ### Atlas II. Detailní průběh překážek (1 : 1 000)
