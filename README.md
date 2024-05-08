@@ -96,6 +96,10 @@ kolem srubů stavebního úseku Opava (OP-S) v rozmezí OP-S 06 až 36b.
 | 31   | neuvedeno  | neuvedeno |
 
 ### Vyúčtovací plány ŽSV IV. Opava 
+
+> [!NOTE]
+> Prověřit datum pořízení vyúčtovacích plánů 
+
 | OP-S | Pořízeno    | Měřítko   |
 |------|-------------|-----------|
 | 06   | 16.06.1938? | 1 : 2 880 | 
@@ -173,6 +177,10 @@ a následně až provést měření a lokalizaci zachovaných zbytků překáže
 > Rozepsat + uvést rozšíření o extenzi PostGIS.
 
 ### Struktura databáze
+
+> [!NOTE] 
+> Doplnit databázi o použitá rastrová data. 
+
 ```
 pto_opavsko
 ├── audit
@@ -258,7 +266,7 @@ aktualizován `hid IN (379, 487, 705)`. V případě aktualizace je nejdříve u
 záznam. Následně je vygenerován nový řádek, kde je vložen duplikát druhého časového záznamu předchozího řádku.
 Aktualizace prvku se tedy chová jako kdyby byl prvek odstraněn a ihned znovu vytvořen.
 
-<img src="./docs_images/prekazky_linie_history.png" alt="Audit vrstvy" style="width:800px;height:50px;"/>
+<img src="./docs_images/prekazky_linie_history.png" alt="Audit vrstvy" style="width:800px;height:100;"/>
 
 
 ##### :point_right: Příklad filtrování prvků dle časových záznamů
@@ -277,7 +285,8 @@ Audit vybraných prvků od určitého časového záznamu lze spustit příkazem
 Audit vybraných prvků do určitého časového záznamu lze spustit příkazem: 
 `psql \set _to 'YYYY-MM-DD' \i ./database/audit/under_prekazky_linie.sql'`
 
-> :warning: Bude vytvořen Python script pro audit vybrané tabulky ve schématu `audit`.
+> [!WARNING] 
+> Bude vytvořen Python script pro audit vybrané tabulky ve schématu `audit`.
 
 #### Schéma `detail` 
 Schéma obsahuje vrstvy v podrobném měřítku (zpravidla 1 : 1 000 a větším). Jedná se zejména o geodetické
@@ -345,19 +354,19 @@ Po vyexportování bude styl propojen s odpovídající vrstvou (tabulkou v data
 Mapový výstup vyobrazuje délku řešeného úseku v měřítku 1 : 60 000, který je doplněn o rozmístění překážek přes
 komunikaci a vybrané archivní fotografie.
 
-Výstup je dostupný ve formátu PNG [**obecný přehled**](https://github.com/zwarott/pto-opavsko/blob/main/outputs/overviews_60000/overview_general_cz.png) 
+Výstup je dostupný ve formátu PNG - [**obecný přehled**](https://github.com/zwarott/pto-opavsko/blob/main/outputs/overviews_60000/overview_general_cz.png). 
 
 ### Sledovaný úsek - podúseky (1 : 60 000)
 Mapový výstup vyobrazuje délku řešeného úseku v měřítku 1 : 60 000 se zaměřením na rozdělení na jednotlivé podúseky, které jsou
 barevně odlišeny a doplněny o náhledy liniových překážek kolem pěchotních srubů.
 
-Výstup je dostupný ve formátu PNG [**podúseky**](https://github.com/zwarott/pto-opavsko/blob/main/outputs/overviews_60000/overview_subsections_s.png) 
+Výstup je dostupný ve formátu PNG - [**podúseky**](https://github.com/zwarott/pto-opavsko/blob/main/outputs/overviews_60000/overview_subsections_cz.png). 
 
 ### Atlas I. Generalizovaný průběh překážek (1 : 2 000)
 Exportované snímky průběhu liniových překážek představují generalizovaný průběh vzhledem k měřítku 1 : 2 000.
 Generalizace spočívá jednak ve zjednodušení geometrie liniových prvků, tak i v agregaci jednotlivých kategorií.
 
-Výstupy jsou dostupné ve formátu PNG v adresáři [**generalized_2000**](https://github.com/zwarott/pto-opavsko/tree/main/outputs/generalized_2000) 
+Výstupy jsou dostupné ve formátu PNG v adresáři [**generalized_2000**](https://github.com/zwarott/pto-opavsko/tree/main/outputs/generalized_2000). 
 
 #### Kategorizace překážek
 | Typ                 | Kategorie        | Stav        | OP-S                                                                        |
@@ -380,3 +389,8 @@ Výstupy jsou dostupné ve formátu PNG v adresáři [**generalized_2000**](http
 | obvodová            | týlová lehká     | provizorní  | 26, 27, 28, 29, 30, 31, 32, 36a, 36b                                        |
 
 ### Atlas II. Detailní průběh překážek (1 : 1 000)
+
+#### Kategorizace překážek
+
+> [!NOTE]
+> Vytvořit přehlednou tabulku ke kategorizaci překážek v detailu (měřítko 1 : 1 000).
