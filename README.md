@@ -4,35 +4,35 @@ v rámci úseku ŽSV (Ženijní skupinové velitelství) IV. Opava, a to konkré
 kolem srubů stavebního úseku Opava (OP-S) v rozmezí OP-S 06 až 36b.
 
 ## Členění řešeného území
-| Úsek          | Podúsek      | Srub                     |
-| --------------|------------- | -------------------------|
-| ŽSV IV. Opava | Malé Hoštice | OP-S 06 Na Zbytkovém     |
-| ŽSV IV. Opava | Malé Hoštice | OP-S 09 Na Lukách        |
-| ŽSV IV. Opava | Malé Hoštice | OP-S 10 Na Křižovatce    |
-| ŽSV IV. Opava | Malé Hoštice | OP-S 11 U cihelny        |
-| ŽSV IV. Opava | Malé Hoštice | OP-S 12 Na rytířském     |
-| ŽSV IV. Opava | Malé Hoštice | OP-S 13 U pískovny       |
-| ŽSV IV. Opava | Malé Hoštice | OP-S 14 U obrázku        |
-| ŽSV IV. Opava | Malé Hoštice | OP-S 15 U kruhovky       |
-| ŽSV IV. Opava | Jaktař       | OP-S 16 Na středním poli |
-| ŽSV IV. Opava | Jaktař       | OP-S 17 Nad silnicí      |
-| ŽSV IV. Opava | Jaktař       | OP-S 18 U sádrovce       |
-| ŽSV IV. Opava | Jaktař       | OP-S 19 U finanční budky |
-| ŽSV IV. Opava | Jaktař       | OP-S 20 Na střelnici     |
-| ŽSV IV. Opava | Jaktař       | OP-S 21 Na cvičišti      | 
-| ŽSV IV. Opava | Jaktař       | OP-S 22 Nad úvozem       | 
-| ŽSV IV. Opava | Jaktař       | OP-S 23 Nad potokem      | 
-| ŽSV IV. Opava | Jaktař       | OP-S 24 Na Gelově poli   | 
-| ŽSV IV. Opava | Milostovice  | OP-S 25 U trigonometru   | 
-| ŽSV IV. Opava | Milostovice  | OP-S 26 U Milostovic     | 
-| ŽSV IV. Opava | Milostovice  | OP-S 27 Paletovo pole    | 
-| ŽSV IV. Opava | Milostovice  | OP-S 28 Mezicestí        | 
-| ŽSV IV. Opava | Milostovice  | OP-S 29 Rozcestí         | 
-| ŽSV IV. Opava | Šibenice     | OP-S 30 Šibenice         | 
-| ŽSV IV. Opava | Šibenice     | OP-S 31 U cesty          | 
-| ŽSV IV. Opava | Šibenice     | OP-S 32 Kopaniny         | 
-| ŽSV IV. Opava | Šibenice     | OP-S 36a Horní Dvoják    | 
-| ŽSV IV. Opava | Šibenice     | OP-S 36b Dolní Dvoják    | 
+| Úsek          | Podúsek      | Srub                        |
+| --------------|------------- | ----------------------------|
+| ŽSV IV. OPAVA | MALÉ HOŠTICE | OP-S 06 NA ZBYTKOVÉM        |
+| ŽSV IV. OPAVA | MALÉ HOŠTICE | OP-S 09 NA LUKÁCH           |
+| ŽSV IV. OPAVA | MALÉ HOŠTICE | OP-S 10 NA KŘIŽOVATCE       |
+| ŽSV IV. OPAVA | MALÉ HOŠTICE | OP-S 11 U CIHELNY           |
+| ŽSV IV. OPAVA | MALÉ HOŠTICE | OP-S 12 NA RYTÍŘSKÉM        | 
+| ŽSV IV. OPAVA | MALÉ HOŠTICE | OP-S 13 U PÍSKOVNY          |
+| ŽSV IV. OPAVA | MALÉ HOŠTICE | OP-S 14 U OBRÁZKU           |
+| ŽSV IV. OPAVA | MALÉ HOŠTICE | OP-S 15 U KRUHOVKY          |
+| ŽSV IV. OPAVA | JAKTAŘ       | OP-S 16 NA STŘEDNÍM POLI    |
+| ŽSV IV. OPAVA | JAKTAŘ       | OP-S 17 NAD SILNICÍ         |
+| ŽSV IV. OPAVA | JAKTAŘ       | OP-S 18 U SÁDROVCE          |
+| ŽSV IV. OPAVA | JAKTAŘ       | OP-S 19 U FINANČNÍ BUDKY    |
+| ŽSV IV. OPAVA | JAKTAŘ       | OP-S 20 NA STŘELNICI        |
+| ŽSV IV. OPAVA | JAKTAŘ       | OP-S 21 NA CVIČIŠTI         | 
+| ŽSV IV. OPAVA | JAKTAŘ       | OP-S 22 NAD ÚVOZEM          | 
+| ŽSV IV. OPAVA | JAKTAŘ       | OP-S 23 NAD POTOKEM         |   
+| ŽSV IV. OPAVA | JAKTAŘ       | OP-S 24 NA GELOVĚ POLI      | 
+| ŽSV IV. OPAVA | MILOSTOVICE  | OP-S 25 U TRIGONOMETRU      | 
+| ŽSV IV. Opava | Milostovice  | OP-S 26 ZA HUMNY MILOSTOVIC | 
+| ŽSV IV. OPAVA | MILOSTOVICE  | OP-S 27 PALETOVO POLE       | 
+| ŽSV IV. OPAVA | MILOSTOVICE  | OP-S 28 MEZICESTÍ           | 
+| ŽSV IV. OPAVA | MILOSTOVICE  | OP-S 29 ROZCESTÍ            | 
+| ŽSV IV. OPAVA | ŠIBENICE     | OP-S 30 ŠIBENICE            | 
+| ŽSV IV. OPAVA | ŠIBENICE     | OP-S 31 U CESTY             | 
+| ŽSV IV. OPAVA | ŠIBENICE     | OP-S 32 KOPANINY            | 
+| ŽSV IV. OPAVA | ŠIBENICE     | OP-S 36a HORNÍ DVOJÁK       | 
+| ŽSV IV. OPAVA | ŠIBENICE     | OP-S 36b DOLNÍ DVOJÁK       | 
 
 ## Podklady
 ### Archivní letecké meřické snímky
@@ -133,239 +133,186 @@ kolem srubů stavebního úseku Opava (OP-S) v rozmezí OP-S 06 až 36b.
 ### Československé mapové listy v měřítku 1 : 75 000
 | Kód  | Název            | Vydáno  |
 |------|------------------|---------|
-| 3959 | Krnov            | 06.1938 | 
-| 3960 | Sudice           | 05.1938 |
-| 4059 | Bruntál          | 05.1938 |
-| 4060 | Moravská Ostrava | 09.1938 |
+| 3959 | KRNOV            | 06.1938 | 
+| 3960 | SUDICE           | 05.1938 |
+| 4059 | BRUNTÁL          | 05.1938 |
+| 4060 | MORAVSKÁ OSTRAVA | 09.1938 |
 
 ### Neměcké mapové listy - Befestigungskarte Tschechoslowakei v měřítku 1 : 75 000 
 | Kód  | Název      | Vydáno   | Přítisk     |
 |------|------------|----------|-------------|
-| 3959 | Troplowitz | 08.1938? | 15.07.1938  |
-| 3960 | Ratibor    | 02.1938? | 15.07.1938  |
-| 4059 | Bruntál    | 02.1938? | 15.07.1938  |
-| 4060 | Hultschin  | 02.1938? | 15.07.1938  |
+| 3959 | TROPLOWITZ | 08.1938? | 15.07.1938  |
+| 3960 | RATIBOR    | 02.1938? | 15.07.1938  |
+| 4059 | BRUNTÁL    | 02.1938? | 15.07.1938  |
+| 4060 | HULTSCHIN  | 02.1938? | 15.07.1938  |
 
 ### Archivní fotodokumentace
 Pro účely oveření provedení jednotlivých částí liniových překážek a pro indentifikaci
 lokálních anomálií byly použity dobové fotografie, a to jednak volně dostupné, tak i v 
 soukromém vlastnictví spoluautora. 
 
-> [!NOTE]
-> Pro jednotlivé OP-S uvést dostupnost dobových fotografií.
-
 ### Měření a fotodokumentace z terénu
 Nedílnou součástí identifikace průběhu překážek těžkého opevnění je i průzkům a měření
 v terénu. Vybrané úseky bylo z důvodu husté vegetace a špatně přístupného terénu obnažit 
-a následně až provést měření a lokalizaci zachovaných zbytků překážek za pomocí GPS.
+a následně bylo možné provést měření a lokalizaci zachovaných zbytků překážek za pomocí GPS.
 
 
-### Schémata a profily jednotlivých kategorií překážek
-### Kniha Tvrze československého opevnění 1935-1938 II.
+## Geodatabáze
+Data jsou ukládána a spravována v relační databázi [**PostgreSQL**](https://www.postgresql.org), která je 
+rozšířena o nadstavbu [**PostGIS**](https://postgis.net) pro práci s prostorovými daty, 
 
+### Konfigurace Geodatabáze
+> [!NOTE]
+> Indexes, Trigger Functions...
 
-## Postup prací
-### Georeferencování
-### Analýza dobových fotografií
-### Vektorizace
-
-
-## Databáze
-### Konfigurace databáze
-
-> [!NOTE] 
-> Rozepsat + uvést rozšíření o extenzi PostGIS.
-
-### Struktura databáze
-
-> [!NOTE] 
-> Doplnit databázi o použitá rastrová data. 
-
+### Struktura geodatabáze
 ```
 pto_opavsko
 ├── audit
-│   ├── centroidy_atlas_history
-│   ├── csr_pred_zaborem_history
-│   ├── geodeticke_zamereni_history
-│   ├── mrizka_m2000_history
-│   ├── palebne_zvony_history
-│   ├── pomocne_linie_history
-│   ├── pozice_srubu_main_history
-│   ├── pozice_srubu_overview_history
-│   ├── pozorovatel_pohled_history
-│   ├── pozorovatel_pozice_history
-│   ├── prekazky_buffer_50m_history
-│   ├── prekazky_linie_history
-│   ├── prubeh_prekazek_history
-│   └── sruby_ruian_history
+│   └── <table_name>_history
+│   
 ├── detail
-│   ├── geodeticke_zamereni
-│   ├── schema_body
-│   ├── schema_koty
-│   ├── schema_linie
-│   └── schema_useky
+│   
 ├── lookups
-│   ├── kat_vp_lookup
-│   ├── katastr_lookup
-│   ├── kategorie_lookup
-│   ├── ops_lookup
-│   ├── podusek_lookup
-│   ├── srub_nazev_lookup
-│   ├── srub_typ_lookup
-│   ├── stav_lookup
-│   └── usek_lookup
+│   └── <column_name>_lookup
+│   
 ├── main
-│   ├── centroidy_atlas
-│   ├── delici_linie_gen
-│   ├── hranice_cr
-│   ├── mrizka_m2000
-│   ├── palebne_zvony
-│   ├── pomocne_linie
-│   ├── pozice_srubu_main
-│   ├── pozorovatel_pohled
-│   ├── pozorovatel_pozice
-│   ├── prekazky_agregovane
-│   ├── prekazky_buffer_50m
-│   ├── prekazky_gen
-│   ├── prekazky_linie
-│   ├── prekazky_test
-│   └── sruby_ruian
+│   
 ├── overview_13kk
-│   ├── csr_pred_zaborem
-│   └── csr_pred_zaborem_label
+│   
 ├── overview_75k
-│   ├── buffered_400m
-│   ├── ipenky
-│   ├── pozice_srubu_overview
-│   └── prubeh_prekazek
-└── public
-    ├── geography_columns
-    ├── geometry_columns
-    ├── layer_styles
-    ├── qgis_projects
-    └── spatial_ref_sys
+│   
+├── public
+│   ├── geography_columns
+│   ├── geometry_columns
+│   ├── layer_styles
+│   ├── qgis_projects
+│   ├── raster_columns
+│   ├── raster_overviews
+│   └── spatial_ref_sys
+│   
+└── rasters
 ```
 
 #### Schéma `audit` 
 Schéma obsahuje tabulky, které zaznamenávají změny při editace (geometrie + další informativní údaje).
-Účelem tabulek s příponou `_history` je trasování změn ve vrstvách obsahující zejména prostorovou informaci. 
-V případě potřeby lze obnovit původní geometrii vrstvy uloženou v určitém řádku.
+Účelem tabulek s příponou `_history` je trasování změn ve výchozí tabulce. Tabulka `prekazky_linie_history` 
+tedy zaznamenává změny v tabulce `prekazky_linie`. V případě potřeby lze sledovat průběh editace vybraných geometrií, 
+potažmo obnovit původní geometrii vybraného prvku.
 
-##### :point_right: Příklad auditu vybraného prvku 
-`audit.prekazky_linie_history` trasuje změny v hlavní tabulce `main.prekazky_linie`. Informace ohledně editace
-jsou uloženy ve sloupci `valid_range`, ve kterém se zaznamenává proces vytvoření, aktualizace a odstranění prvku
-vrstvy (tabulky). Jednotlivým změnám v tabulce je přiřazen unikátní identifikátor (`hid`). Ty jsou v tabulce
-zaznamenávány chronologicky.
+**:point_right: Příklad auditu vybrané prvku (řádku) v tabulce**
+Informace ohledně časové stopy editace jsou uloženy ve sloupci `valid_range`, ve kterém se zaznamenává proces vytvoření, 
+aktualizace a odstranění prvku vybrané tabulky. Jednotlivým změnám v tabulce je přiřazen unikátní identifikátor (`hid`) - tzv. 
+"history id". Ty jsou v tabulce zaznamenávány chronologicky.
 
-Na níže uvedené ukázce je demonstrován proces změny vybraného prvku v tabulce s (`fid = 47`). Tento prvek byl 
-vytvořen `2023-01-03 21:24:41` a naposledy změněn v `2024-03-25 22:07:39`.
+Pokud potřebuje prověřit vývjoj editace vybraného prvku s prostorovou informací v tabulce `main.prekazky_linie`, tak nejdříve musíme 
+identifikovat příslušné `fid` (feature id) prvku v této tabulce. Po zjištění `fid` spustíme v příkazovém řádku připravený shell skript
+[**audit_row**](https://github.com/zwarott/pto-opavsko/blob/database/audit/audit_row.sh), přičemž jako parametry vepíšeme název tabulky
+`prekazky_linie` a zjištěné `fid` -> `./audit_row.sh preakzky_linie_history 7`. 
 
-První časový záznam v hranaté závorce představuje čas, kdy byl prvek buď vytvořen (`hid = 160`) nebo aktualizován
-`hid IN (379, 487, 705)`. Druhý časový záznam v hranaté závorce představuje čas, kdy byl prvek buď odstraněn nebo
-aktualizován `hid IN (379, 487, 705)`. V případě aktualizace je nejdříve u vytvořeného prvku vyplněn druhý časový
-záznam. Následně je vygenerován nový řádek, kde je vložen duplikát druhého časového záznamu předchozího řádku.
+Na níže uvedené ukázce je demonstrován proces změny vybraného prvku v tabulce s (`fid = 47`). Tento prvek byl vytvořen `2023-01-03 21:24:41` 
+a naposledy změněn v `2024-04-24 18:22:34`.První časový záznam ve sloupci `valid_range` představuje čas, kdy byl prvek buď vytvořen  
+nebo aktualizován. Druhý časový záznam  představuje čas, kdy byl prvek buď odstraněn nebo aktualizován.  V případě aktualizace je nejdříve 
+u vytvořeného prvku vyplněn druhý časový záznam. Následně je vygenerován nový řádek, kde je vložen duplikát druhého časového záznamu předchozího řádku. 
 Aktualizace prvku se tedy chová jako kdyby byl prvek odstraněn a ihned znovu vytvořen.
 
 <img src="./docs_images/prekazky_linie_history.png" alt="Audit vrstvy" style="width:800px;height:100;"/>
 
+**:point_right: Příklad filtrování prvků (řádků) dle časových záznamů**
+Změny v tabulce můžeme kontrolovat i dle časových paramtrů:
 
-##### :point_right: Příklad filtrování prvků dle časových záznamů
-Pro účely auditu editace prvků v tabulce (momentálně jen `main.prekazky_linie`) jsou vytvořeny SQL s vstupními
-proměnými. Tyto skripty jsou nastaveny tak, aby je bylo možné spustit v interaktivním porstředí `psql`.
+Audit vybraných prvků v časovém rozpětí-> [**audit_from_to**](https://github.com/zwarott/pto-opavsko/blob/database/audit/audit_from_to.sh):
+`./database/audit//audit_from_to.sh <table> <from> <to>`
 
-Audit vybraného prvku lze spustit příkazem:
-`psql \set _fid 47 \i ./database/audit/from_to_prekazky_linie.sql'`
+Audit vybraných prvků od vybraného časového záznamu-> [**audit_over**](https://github.com/zwarott/pto-opavsko/blob/database/audit/audit_over.sh):
+`./database/audit/audit_over.sh <table> <over>`
 
-Audit vybraných prvků v určitém časovém rozpětí lze spustit příkazem:
-`psql \set _from 'YYYY-MM-DD' \set _to 'YYYY-MM-DD \i ./database/audit/from_to_prekazky_linie.sql'`
-
-Audit vybraných prvků od určitého časového záznamu lze spustit příkazem: 
-`psql \set _from 'YYYY-MM-DD' \i ./database/audit/over_prekazky_linie.sql'`
-
-Audit vybraných prvků do určitého časového záznamu lze spustit příkazem: 
-`psql \set _to 'YYYY-MM-DD' \i ./database/audit/under_prekazky_linie.sql'`
-
-> [!WARNING] 
-> Bude vytvořen Python script pro audit vybrané tabulky ve schématu `audit`.
+Audit vybraných prvků do vybraného časového záznamu-> [**audit_under**](https://github.com/zwarott/pto-opavsko/blob/database/audit/audit_under.sh):
+`.database/audit/audit_over.sh <table> <under>`
 
 #### Schéma `detail` 
 Schéma obsahuje vrstvy v podrobném měřítku (zpravidla 1 : 1 000 a větším). Jedná se zejména o geodetické
 zaměření a detailní provedení liniových překážek opevnění.
 
-
 #### Schéma `lookups` 
 Schéma obsahuje tabulky bez prostorové informace. Jedná se o tzv. tabulky s cizími klíčy, neboli tabulky s vybraným
-atributem (sloupcem), pro který jsou přednastaveny povolené vstupní hodnoty. Po propojení s cílovou tabulkou (vrstvou)
-je zabezpečeno, že do vybraného atributu nebude vložena hodnota nebo údaj, který není nadefinován v propojené tabulce
-v rámci schématu `lookup`.
+atributem (sloupcem), pro který jsou přednastaveny povolené vstupní hodnoty. Po propojení s cílovou tabulkou je zabezpečeno,
+že do vybraného atributu nebude vložena hodnota nebo údaj, který není nadefinován v tabulce s příponou `_lookup`.
 
 > [!TIP]
-> Využití cizích klíčů nabízí možnost propojit nastavení PostgreSQL omezení s QGIS Forms. Při editaci vrstvy v
-> prostředí QGIS uživatel vybírá hodnotu/údaj z přednastaveného seznamu. Tím je zaručena eliminace chyb při ručním vyplňování 
-> v atributové tabulce.
+> Využití cizích klíčů nabízí možnosti propojení s QGIS Forms. Při editaci vrstvy v prostředí QGIS uživatel vybírá hodnotu/údaj 
+> z předchystaného seznamu. Tím je zaručena eliminace chyb při ručním vyplňování v atributové tabulce.
 
-##### :point_right: Příklad propojení tabulek za použití cizích klíčů
+**:point_right: Příklad propojení tabulek za použití cizích klíčů**
 Atribut `podusek` v tabulce `overview_75k.pozice_srubu_overview` může obsahovat pouze údaje, které jsou obsažené ve
 sloupci `podusek` v tabulce `lookups.podusek_lookup`.
-<img src="./docs_images/podusek_pop_up_menu.png" alt="QGIS pop-up menu" style="width:800px;height:100px;"/>
 
+<img src="./docs_images/podusek_pop_up_menu.png" alt="QGIS pop-up menu" style="width:800px;height:100px;"/>
 
 #### Schéma `main` 
 Schéma obsahuje vrstvy (tabulky) zobrazitelné ve standardním měřítku (zpravidla k 1 : 2 000).
 
-
 #### Schéma `overview_13kk` 
 Schéma obsahuje vrstvy (tabulky) zobrazitelné zpravidla v měřítku 1 : 13 000 000.
-
 
 #### Schéma `overview_75k` 
 Schéma obsahuje vrstvy (tabulky) zobrazitelné zpravidla v měřítku 1 : 75 000.
 
-
 #### Schéma `public` 
-Jedná so o výchozí schéma, které v rámci daného projektu obsahuje zejména konfigurační nastavení databáze, QGIS projektu
-a výchozí stylování tabulek (vrstev). Pro účely práce s prostorovými daty (PostGIS) jsou součástí výchozího schématu metadatové tabulky
+Jedná so o výchozí schéma, které v rámci daného projektu obsahuje zejména konfigurační nastavení geodatabáze, QGIS projektu
+a výchozí stylování tabulek (vrstev). Pro účely práce s prostorovými daty jsou součástí výchozího schématu metadatové tabulky
 pro integraci lokálních a globálních kordinačních referenčních systémů (`geoography_column`, `geometry_column`, `spatial_ref_sys`).
-Jelikož je projekt primárně zpracováván v prostředí QGIS, tak je do databáze ukládáno výchozí stylování vektorových vrstev (`layer_styles`)
-včetně projektového souboru v rámci (`qgis_projects`), který v sobě skrývá cesty importovaných vektorových vrstev z PostgreSQL databáze, 
-doprovodných rastrových snímků či WMS služeb. Pro účely exportu jsou v projektovém souboru uloženy výkresové sestavy
+Jelikož je projekt primárně zpracováván v prostředí QGIS, tak je do geodatabáze ukládáno výchozí stylování vektorových vrstev (`layer_styles`)
+včetně projektového souboru (`qgis_projects`), který v sobě skrývá cesty importovaných vektorových vrstev z geodatabáze, 
+doprovodných rastrových snímků či WMS služeb. Pro účely exportu jsou v projektovém souboru uloženy i výkresové sestavy.
 
-### Zálohování databáze
-Databáze je zálohována a následně šifrována za pomocí [**GNU Privacy Guard**](https://www.gnupg.org/software/index.html).
-
-Po spuštění skriptu v terminálu `python ./database/backup/run_backup_encrypt.py` je uživatel vyzván k zadání hesla pro účely šifrování.
-Následně potvrdí nově zvolené heslo. Pokud je databáze zabezpečena heslem, tak je nutné zadat i toto heslo. 
-
-Šifrovanou databázi lze dešifrovat příkazem v terminálu `gpg --output output_file.sql --decrypt input_file.sql.gpg`, kde `output_file.sql`
-reprezentuje dešifrovanou databázi, zatímco `input_file.sql.gpg` představuje vstupní, zašifrovanou databázi.
-
-<img src="./docs_images/encrypt_database.png" alt="Encrypt database in terminal" style="width:500px;height:100px;"/>
-
-### Export stylů do databazáze
+**:point_right: Export stylů do geodatabáze**
 V prostředí QGIS lze vyexportovat styly níže uvedeným postupem:
 `Layer Properties` > `Export` > `Save as QGIS Layer Style File`.
 Po vyexportování bude styl propojen s odpovídající vrstvou (tabulkou v databázi).
 
 <img src="./docs_images/qgis_save_layer_style.png" alt="Save Layer Style" style="width:300px;height:400px;"/>
 
+#### Schéma `rasters`
+Pro práci s rastrovými snímky využívá projekt [**knihovnu GDAL**](https://gdal.org).
+
+**:point_right: Georeferencování**
+
+**:point_right: Import rastrového snímku do geodatabáze**
+Pro import rastrového snímku do geodatabáze stačí spustit v příkazovém řádku níže shell skript 
+[**raster_import**](https://github.com/zwarott/pto-opavsko/blob/database/rasters/raster_import.sh), kde `input_raster` představuje cestu
+ke vstupnímu rastru, zatímco `raster_table` odpovídá importovanému rastru v geodatabázi -> `./database/rasters/import_raster.sh <input_raster> <raster_table>`.
+
+**:point_right: Přehled o uloženém rastru v databázi**
+Pro zprostředkování výpisu [**vlastností**](https://gdal.org/programs/gdalinfo.html#gdalinfo) uloženého rastru v geodatabázi slouží 
+[**raster_import**](https://github.com/zwarott/pto-opavsko/blob/database/rasters/raster_info.sh). Zde postačí pouze vepsat název rasterového snímku
+v geodatabázi -> `./database/rasters/raster_info.sh raster_table>`. 
+
+### Zálohování geodatabáze
+Geoatabáze je zálohována a následně šifrována za pomocí [**GNU Privacy Guard**](https://www.gnupg.org/software/index.html).
+
+Po spuštění skriptu v příkazovém řádku `python ./database/backup/run_backup_encrypt.py` je uživatel vyzván k zadání hesla pro účely šifrování.
+Následně potvrdí nově zvolené heslo. Pokud je geodatabáze zabezpečena heslem, tak je nutné zadat i toto heslo. 
+
+Šifrovanou databázi lze dešifrovat příkazem v příkazovém řádku `gpg --output output_file.sql --decrypt input_file.sql.gpg`, kde `output_file.sql`
+reprezentuje dešifrovanou geodatabázi, zatímco `input_file.sql.gpg` představuje vstupní, zašifrovanou geodatabázi.
+
+<img src="./docs_images/encrypt_database.png" alt="Encrypt database in terminal" style="width:500px;height:100px;"/>
+
 
 ## Výstupy
 ### Sledovaný úsek - obecný přehled (1 : 60 000)
-Mapový výstup vyobrazuje délku řešeného úseku v měřítku 1 : 60 000, který je doplněn o rozmístění překážek přes
-komunikaci a vybrané archivní fotografie.
-
+Mapový výstup vyobrazuje délku řešeného úseku v měřítku 1 : 60 000, který je doplněn o rozmístění překážek přes komunikaci a vybrané archivní fotografie.
 Výstup je dostupný ve formátu PNG - [**obecný přehled**](https://github.com/zwarott/pto-opavsko/blob/main/outputs/overviews_60000/overview_general_cz.png). 
 
 ### Sledovaný úsek - podúseky (1 : 60 000)
 Mapový výstup vyobrazuje délku řešeného úseku v měřítku 1 : 60 000 se zaměřením na rozdělení na jednotlivé podúseky, které jsou
 barevně odlišeny a doplněny o náhledy liniových překážek kolem pěchotních srubů.
-
 Výstup je dostupný ve formátu PNG - [**podúseky**](https://github.com/zwarott/pto-opavsko/blob/main/outputs/overviews_60000/overview_subsections_cz.png). 
 
 ### Atlas I. Generalizovaný průběh překážek (1 : 2 000)
 Exportované snímky průběhu liniových překážek představují generalizovaný průběh vzhledem k měřítku 1 : 2 000.
 Generalizace spočívá jednak ve zjednodušení geometrie liniových prvků, tak i v agregaci jednotlivých kategorií.
-
 Výstupy jsou dostupné ve formátu PNG v adresáři [**generalized_2000**](https://github.com/zwarott/pto-opavsko/tree/main/outputs/generalized_2000). 
 
 #### Kategorizace překážek
