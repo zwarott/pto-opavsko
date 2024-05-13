@@ -98,7 +98,7 @@ kolem srubů stavebního úseku Opava (OP-S) v rozmezí OP-S 06 až 36b.
 ### Vyúčtovací plány ŽSV IV. Opava 
 
 > [!NOTE]
-> Prověřit datum pořízení vyúčtovacích plánů 
+> Prověřit datum pořízení vyúčtovacích plánů. 
 
 | OP-S | Pořízeno    | Měřítko   |
 |------|-------------|-----------|
@@ -159,7 +159,7 @@ a následně bylo možné provést měření a lokalizaci zachovaných zbytků p
 
 ## Geodatabáze
 Data jsou ukládána a spravována v relační databázi [**PostgreSQL**](https://www.postgresql.org), která je 
-rozšířena o nadstavbu [**PostGIS**](https://postgis.net) pro práci s prostorovými daty, 
+rozšířena o nadstavbu [**PostGIS**](https://postgis.net) pro práci s prostorovými daty. 
 
 ### Konfigurace Geodatabáze
 > [!NOTE]
@@ -200,15 +200,18 @@ Schéma obsahuje tabulky, které zaznamenávají změny při editace (geometrie 
 tedy zaznamenává změny v tabulce `prekazky_linie`. V případě potřeby lze sledovat průběh editace vybraných geometrií, 
 potažmo obnovit původní geometrii vybraného prvku.
 
-**:point_right: Příklad auditu vybrané prvku (řádku) v tabulce**
+**:point_right: Příklad auditu vybrané prvku (řádku) v tabulce**   
 Informace ohledně časové stopy editace jsou uloženy ve sloupci `valid_range`, ve kterém se zaznamenává proces vytvoření, 
 aktualizace a odstranění prvku vybrané tabulky. Jednotlivým změnám v tabulce je přiřazen unikátní identifikátor (`hid`) - tzv. 
 "history id". Ty jsou v tabulce zaznamenávány chronologicky.
 
 Pokud potřebuje prověřit vývjoj editace vybraného prvku s prostorovou informací v tabulce `main.prekazky_linie`, tak nejdříve musíme 
 identifikovat příslušné `fid` (feature id) prvku v této tabulce. Po zjištění `fid` spustíme v příkazovém řádku připravený shell skript
-[**audit_row**](https://github.com/zwarott/pto-opavsko/blob/database/audit/audit_row.sh), přičemž jako parametry vepíšeme název tabulky
-`prekazky_linie` a zjištěné `fid` -> `./audit_row.sh preakzky_linie_history 7`. 
+[**audit_row.sh**](https://github.com/zwarott/pto-opavsko/blob/database/audit/audit_row.sh), přičemž jako parametry vepíšeme název tabulky
+`prekazky_linie` a zjištěné `fid`:
+```
+./audit_row.sh preakzky_linie_history 47
+```
 
 Na níže uvedené ukázce je demonstrován proces změny vybraného prvku v tabulce s (`fid = 47`). Tento prvek byl vytvořen `2023-01-03 21:24:41` 
 a naposledy změněn v `2024-04-24 18:22:34`.První časový záznam ve sloupci `valid_range` představuje čas, kdy byl prvek buď vytvořen  
@@ -218,17 +221,23 @@ Aktualizace prvku se tedy chová jako kdyby byl prvek odstraněn a ihned znovu v
 
 <img src="./docs_images/prekazky_linie_history.png" alt="Audit vrstvy" style="width:800px;height:100;"/>
 
-**:point_right: Příklad filtrování prvků (řádků) dle časových záznamů**
+**:point_right: Příklad filtrování prvků (řádků) dle časových záznamů**   
 Změny v tabulce můžeme kontrolovat i dle časových paramtrů:
 
-Audit vybraných prvků v časovém rozpětí-> [**audit_from_to**](https://github.com/zwarott/pto-opavsko/blob/database/audit/audit_from_to.sh):
-`./database/audit//audit_from_to.sh <table> <from> <to>`
+Audit vybraných prvků v časovém rozpětí - [**audit_from_to.sh**](https://github.com/zwarott/pto-opavsko/blob/database/audit/audit_from_to.sh):
+```
+./database/audit/audit_from_to.sh <table> <from> <to>
+```
 
-Audit vybraných prvků od vybraného časového záznamu-> [**audit_over**](https://github.com/zwarott/pto-opavsko/blob/database/audit/audit_over.sh):
-`./database/audit/audit_over.sh <table> <over>`
+Audit vybraných prvků od vybraného časového záznamu - [**audit_over.sh**](https://github.com/zwarott/pto-opavsko/blob/database/audit/audit_over.sh):
+```
+./database/audit/audit_over.sh <table> <over>
+```
 
-Audit vybraných prvků do vybraného časového záznamu-> [**audit_under**](https://github.com/zwarott/pto-opavsko/blob/database/audit/audit_under.sh):
-`.database/audit/audit_over.sh <table> <under>`
+Audit vybraných prvků do vybraného časového záznamu - [**audit_under.sh**](https://github.com/zwarott/pto-opavsko/blob/database/audit/audit_under.sh):
+```
+.database/audit/audit_over.sh <table> <under>
+```
 
 #### Schéma `detail` 
 Schéma obsahuje vrstvy v podrobném měřítku (zpravidla 1 : 1 000 a větším). Jedná se zejména o geodetické
@@ -243,7 +252,7 @@ atributem (sloupcem), pro který jsou přednastaveny povolené vstupní hodnoty.
 > Využití cizích klíčů nabízí možnosti propojení s QGIS Forms. Při editaci vrstvy v prostředí QGIS uživatel vybírá hodnotu/údaj 
 > z předchystaného seznamu. Tím je zaručena eliminace chyb při ručním vyplňování v atributové tabulce.
 
-**:point_right: Příklad propojení tabulek za použití cizích klíčů**
+**:point_right: Příklad propojení tabulek za použití cizích klíčů**   
 Atribut `podusek` v tabulce `overview_75k.pozice_srubu_overview` může obsahovat pouze údaje, které jsou obsažené ve
 sloupci `podusek` v tabulce `lookups.podusek_lookup`.
 
@@ -266,7 +275,7 @@ Jelikož je projekt primárně zpracováván v prostředí QGIS, tak je do geoda
 včetně projektového souboru (`qgis_projects`), který v sobě skrývá cesty importovaných vektorových vrstev z geodatabáze, 
 doprovodných rastrových snímků či WMS služeb. Pro účely exportu jsou v projektovém souboru uloženy i výkresové sestavy.
 
-**:point_right: Export stylů do geodatabáze**
+**:point_right: Export stylů do geodatabáze**   
 V prostředí QGIS lze vyexportovat styly níže uvedeným postupem:
 `Layer Properties` > `Export` > `Save as QGIS Layer Style File`.
 Po vyexportování bude styl propojen s odpovídající vrstvou (tabulkou v databázi).
@@ -278,24 +287,37 @@ Pro práci s rastrovými snímky využívá projekt [**knihovnu GDAL**](https://
 
 **:point_right: Georeferencování**
 
-**:point_right: Import rastrového snímku do geodatabáze**
+**:point_right: Import rastrového snímku do geodatabáze**   
 Pro import rastrového snímku do geodatabáze stačí spustit v příkazovém řádku níže shell skript 
-[**raster_import**](https://github.com/zwarott/pto-opavsko/blob/database/rasters/raster_import.sh), kde `input_raster` představuje cestu
-ke vstupnímu rastru, zatímco `raster_table` odpovídá importovanému rastru v geodatabázi -> `./database/rasters/import_raster.sh <input_raster> <raster_table>`.
+[**import_raster.sh**](https://github.com/zwarott/pto-opavsko/blob/database/rasters/raster_import.sh), kde `input_raster` představuje cestu
+ke vstupnímu rastru, zatímco `raster_table` odpovídá importovanému rastru v geodatabázi:
+```
+./database/rasters/import_raster.sh <input_raster> <raster_table>
+```
 
-**:point_right: Přehled o uloženém rastru v databázi**
+**:point_right: Přehled o uloženém rastru v databázi**   
 Pro zprostředkování výpisu [**vlastností**](https://gdal.org/programs/gdalinfo.html#gdalinfo) uloženého rastru v geodatabázi slouží 
-[**raster_import**](https://github.com/zwarott/pto-opavsko/blob/database/rasters/raster_info.sh). Zde postačí pouze vepsat název rasterového snímku
-v geodatabázi -> `./database/rasters/raster_info.sh raster_table>`. 
+[**raster_info.sh**](https://github.com/zwarott/pto-opavsko/blob/database/rasters/raster_info.sh). Zde postačí pouze vepsat název rasterového snímku
+v geodatabázi: 
+```
+./database/rasters/raster_info.sh <raster_table> 
+```
 
 ### Zálohování geodatabáze
 Geoatabáze je zálohována a následně šifrována za pomocí [**GNU Privacy Guard**](https://www.gnupg.org/software/index.html).
 
-Po spuštění skriptu v příkazovém řádku `python ./database/backup/run_backup_encrypt.py` je uživatel vyzván k zadání hesla pro účely šifrování.
+Po spuštění skriptu v příkazovém řádku je uživatel vyzván k zadání hesla pro účely šifrování.
 Následně potvrdí nově zvolené heslo. Pokud je geodatabáze zabezpečena heslem, tak je nutné zadat i toto heslo. 
+```
+python ./database/backup/run_backup_encrypt.py
+``` 
 
-Šifrovanou databázi lze dešifrovat příkazem v příkazovém řádku `gpg --output output_file.sql --decrypt input_file.sql.gpg`, kde `output_file.sql`
-reprezentuje dešifrovanou geodatabázi, zatímco `input_file.sql.gpg` představuje vstupní, zašifrovanou geodatabázi.
+Šifrovanou databázi lze dešifrovat příkazem v příkazovém řádku , kde `output_file.sql` reprezentuje dešifrovanou geodatabázi, 
+zatímco `input_file.sql.gpg` představuje vstupní, zašifrovanou geodatabázi.
+ 
+```
+gpg --output output_file.sql --decrypt input_file.sql.gpg
+```
 
 <img src="./docs_images/encrypt_database.png" alt="Encrypt database in terminal" style="width:500px;height:100px;"/>
 
