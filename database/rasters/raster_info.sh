@@ -5,7 +5,7 @@
 # Check if the table name is provided as an argument
 # If not (argument '#$' is equal '-eq' to 0), it prints: 'Usage: ./raster_info.sh <table_name>'
 # If table does not exist, an error message is provided
-if [ $# -eq 0 ]; then
+if [ "$#" -eq 0 ]; then
     echo "Usage: $0 <table_name>"
     exit 1
 fi
