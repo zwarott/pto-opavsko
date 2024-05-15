@@ -13,29 +13,25 @@ fi
 TABLE="$1"
 FID="$2"
 
+# Define the column to exclude
+COLUMN_TO_EXCLUDE="geom"
+
 # Define PostgreSQL connection parameters
 HOST="localhost"
 USERNAME="zwarott"
 DATABASE="pto_opavsko"
 
-# Show me history of specific row/record (feature) within selected table 
-# Need to use single quotes to converts arguments into strings
-# Add <<EOF EOF that allows to include a block of SQL query
-# in more readable way
+# Get the list of columns excluding the specific column
+COLUMNS=$(psql -h "$HOST" -U "$USERNAME" -d "$DATABASE" -t -c "
+  SELECT string_agg(column_name, ', ')
+  FROM information_schema.columns
+  WHERE table_name = '${TABLE}_history' AND column_name != '$COLUMN_TO_EXCLUDE'
+")
+
+# Show the history of a specific row/record (feature) within the selected table
 psql -h "$HOST" -U "$USERNAME" -d "$DATABASE"  <<EOF
   SELECT 
-    hid,
-    fid,
-    ops,
-    kategorie,
-    stav,
-    provedeni,
-    kat_vp,
-    poznamka,
-    delka_gis,
-    delka_vp,
-    delka_sv,
-    valid_range
+    $COLUMNS
   FROM 
     audit.${TABLE}_history
   WHERE
