@@ -26,5 +26,7 @@ psql -h "$HOST" -U "$USERNAME" -d "$DATABASE"  <<EOF
   FROM 
     information_schema.tables 
   WHERE 
-    table_schema = '$SCHEMA';
+    table_schema = '$SCHEMA'
+  ORDER BY
+    table_name;
 EOF
