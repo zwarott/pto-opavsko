@@ -5,12 +5,12 @@
 
 # Check if schema name argument is provided
 if [ "$#" -ne 1 ]; then
-    echo "Usage: $0 <schema>"
+    echo "Usage: $0 <target_schema>"
     exit 1
 fi
 
 # Assign the schema name argument to a variable
-SCHEMA="$1"
+TARGE_SCHEMA="$1"
 
 # Define PostgreSQL connection parameters
 HOST="localhost"
@@ -26,7 +26,7 @@ psql -h "$HOST" -U "$USERNAME" -d "$DATABASE"  <<EOF
   FROM 
     information_schema.tables 
   WHERE 
-    table_schema = '$SCHEMA'
+    table_schema = '$TARGET_SCHEMA'
   ORDER BY
     table_name;
 EOF

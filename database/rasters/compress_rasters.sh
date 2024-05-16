@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Make the script executable by running the following command in the terminal
-# chmod +x import_rasters.sh
+# chmod +x compress_rasters.sh
 
 # Exit immediately if any command returns a non-zero status (if eny error occurs)
 set -e
