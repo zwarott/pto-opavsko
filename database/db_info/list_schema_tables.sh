@@ -10,7 +10,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 # Assign the schema name argument to a variable
-TARGE_SCHEMA="$1"
+TARGET_SCHEMA="$1"
 
 # Define PostgreSQL connection parameters
 HOST="localhost"
