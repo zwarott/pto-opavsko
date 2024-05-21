@@ -42,6 +42,18 @@ start_time=$(date +%s.%N)
 
 
 # Find all TIF files in the directory and iterate over them
+# find          | search for files and directories within a directory
+# -type f       | look for files only (not directories)
+# -name "*.tif" | look for all files with patters "tif" extension
+# -print0       | print the full file name on the standard output with 0 character- useful for handling file names with spaces or special characters
+#
+# while .. do .. done loop
+# IFS= | Internal Field Separator is set to an empty value - it determinates how to split input into words
+# Empty value prevents leading/trailing whitespace from being trimmed
+# read        | read input
+# -r          | treat backshlashes literally (do not interpret them as excape characters)
+# -d ''       | read until a null character is found ('\0') - matches the output format of 'find -print0'
+# RASTER_FILE | variable into which 'read' command stores the input it reads (each file name)
 find "$RASTER_DIR" -type f -name "*.tif" -print0 | while IFS= read -r -d '' RASTER_FILE; do
     # Extract raster file name without extension
     RASTER_NAME=$(basename "$RASTER_FILE" .tif)

@@ -35,12 +35,13 @@ start_time=$(date +%s.%N)
 for RASTER_FILE in "$SOURCE_DIR"/*.tif; do
     # Check if the file is a raster file
     if [ -f "$RASTER_FILE" ]; then
-        # Get the filename without extension
+        # Get the filename with extension 
         FILENAME=$(basename -- "$RASTER_FILE")
+        # Get the filename without extension
         FILENAME_NO_EXT="${FILENAME%.*}"
-        
-        # Compress the raster file using LZW compression
+        # Define path and name of compressed raster        
         COMPRESSED_RASTER="$DEST_DIR/$FILENAME_NO_EXT".tif
+        # Compress the raster file using LZW compression
         gdal_translate -co COMPRESS=LZW "$RASTER_FILE" "$COMPRESSED_RASTER"
         
         # Print status
