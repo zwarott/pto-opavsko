@@ -1,3 +1,9 @@
+# Ignore system files
 .DS_Store
+
+# Ignore folders with files within
 input_rasters/
 db_backups/
+
+# Ignore files
+metadata.txt
